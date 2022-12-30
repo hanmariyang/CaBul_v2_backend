@@ -1,132 +1,183 @@
-## 프로젝트 이름
+# CaBul_v2 (유화제작 서비스)
 
-### CaBul ver.2
+## 프로젝트
 
-## 프로젝트 소개
 
-### 자신의 사진을 유화 스타일로 바꾸고 자동으로 카테고리를 분류해주는 사이트
 
-## 팀 이름
+### CaBul_v2
 
-### 싸지방
+시연 영상 :
 
-## 팀원 소개
+[https://youtu.be/yDjeBdIAzjU/](https://youtu.be/yDjeBdIAzjU/)
 
-박준석 
+프로젝트 일정 : 2022.11.22 ~ 2022.11.28
 
-[devjunseok - Overview](https://github.com/devjunseok)
+프론트엔드 Repository : [https://github.com/devjunseok/CaBul_v2_frontend](https://github.com/devjunseok/CaBul_v2_frontend)
 
-노우석 
+백엔드  Repository :[https://github.com/devjunseok/CaBul_v2_backend](https://github.com/devjunseok/CaBul_v2_backend)
 
-[WooSeok-Nho - Overview](https://github.com/WooSeok-Nho/)
+S.A 링크 : [B1팀 최종 프로젝트](https://iodized-justice-c7c.notion.site/B1-ed15c9156d7949faa389b0835662ab0a)
 
-성창남 
+## 1. 프로젝트 주제
 
-[SungChangNam - Overview](https://github.com/SungChangNam)
+### 사물인식을 활용한 이미지 자동 분류 및 유화제작 서비스
 
-양기철 
+자신의 사진을 유화로 제작해보고, 다른 사용자들과 소통하는 커뮤니티 사이트
 
-[hanmariyang - Overview](https://github.com/hanmariyang)
+## 2. 기술 스택
 
-이태겸 
+- 백엔드
+    - Python 3.10
+    - Django 4.1.4
+    - Django Rest Framework 3.14
+    - Django Rest Framework simple-jwt 5.2.2
+    - PyTorch 1.13.0
+- 프론트엔드
+    - HTML5
+    - Javascript
+    - JQuery
+    - CSS
 
-[poro625 - Overview](https://github.com/poro625)
+## 3. 싸지방 팀 팀원 및 역할
 
-## 개발 역할 분담
+### 박준석 - [devjunseok - Overview](https://github.com/devjunseok)
 
-### 프론트엔드 - 팀원 모두
+팀장 / 프로젝트 기획 / 테스트 코드 작성 / user 기능/ DB 모델링 / 머신러닝, 딥러닝 코드 작성
 
-### 최상위 템플릿
+### 노우석 - [WooSeok-Nho - Overview](https://github.com/WooSeok-Nho/)
 
-- [ ]  index.html
-- [ ]  base.html
+팀원 / 프로젝트 기획 / user기능 / 날씨추천기능 / 포인트적립기능 / FrontEnd 제작,API연결
 
-### users 템플릿
+### 성창남 - [SungChangNam - Overview](https://github.com/SungChangNam)
 
-- [ ]  login.html (로그인페이지)
-- [ ]  signup.html (회원가입페이지)
-- [ ]  profile_edit.html (회원정보 수정 페이지)
-- [ ]  profile_edit_password.html(비밀번호 수정 페이지)
-- [ ]  follow.html (회원정보 읽기, 팔로우,팔로워 페이지)
+팀원 / 프로젝트 기획 / communities 기능/ DB 모델링 / FrontEnd 제작,API연결
 
-### articles템플릿
+### 양기철 - [hanmariyang - Overview](https://github.com/hanmariyang)
 
-- [ ]  home.html (영화 목록, 영화 클릭하면 영화 상세 페이지로 이동(모달로 처리))
-- [ ]  upload.html (게시 업로드)
-- [ ]  update.html (게시글 수정 페이지)
-- [ ]  search.html (검색페이지)
-- [ ]  detail.html (게시글 상세 페이지)
-- [ ]  base.html (위에 navbar, 검색창, 글쓰기버튼, 홈버튼, 알림, 베이스 html)
-- [ ]  footer.html (하단에 팀 소개)
+팀원 / 프로젝트 기획 / products, recommend 기능 / 상품정보 크롤링 / DB모델링 / 추천 서비스 기능 / FrontEnd 템플릿 제작 및 API연결
 
-### JavaScript
+### 이태겸 - [poro625 - Overview](https://github.com/poro625)
 
-- users api 자바스크립트 - 박준석, 노우석
-    
-    
-- contents api 자바스크립트 - 박준석, 양기철, 성창남, 이태겸
-    
-    
+팀원 / 프로젝트 기획 / communites 기능, products 기능, weather 기능/크롤링/ DB 모델링 /태그 기능/ 검색 기능/상세보기 수정 및 삭제
 
-### 백엔드 - 팀원 모두
+## 4. 프로젝트 기능
 
-- 로그인 기능(users)
-    - [x]  회원가입 (email, 이름,비밀번호) - 박준석
-    - [x]  로그인 - 박준석
-    - [x]  내 프로필 편집(비밀번호 변경, 이메일 변경, 프로필 사진 변) - 노우석
-    - [x]  회원탈퇴 - 노우석
-    - [x]  마이페이지(유저정보 조회 기능) - 노우석
-- 게시글 기능(articles)
-    - [ ]  사진 업로드, 수정 및 삭 - 박준석, 양기철
-    - [ ]  댓글올리기+ 댓글 수정(본인의 댓글만)  - 성창남
-    - [ ]  좋아요 - 이태겸
-    - [ ]  검색 - 이태겸
-    - [ ]  태그 - 이태겸
-- 딥러닝 - 유화제작
-    - [ ]  유화 제작 -  박준석, 양기철
-    - [ ]  카테고리 자동 분류 - 박준석, 양기철
-- 배포 - 팀원 모두
-    - [ ]  EC2, Docker 사용
-- 추가로 시도해 볼 기능들
-    - [ ]  팔로우, 팔로워
-    - [ ]  소셜 로그인
-    - [ ]  대댓글
-    - [ ]  pagigantion
+### User 기능(회원가입/로그인 - simple jwt 사용)
 
-## 개발 일정
+- 회원가입 시, 아이디, 닉네임, 비밀번호 정규표현식 필터링 적용 ( 회원정보 수정 시에도 적용)
+- extra_kwargs 처리로 에러 메세지 세분화 처리
+- 로그인 시 발급되는 페이로드에 유저 pk값, username 값 저장
+- 회원정보 CRUD 기능
+- 회원가입 시 약관동의 기능
+- 마지막 로그인 365일 경과된 아이디 삭제 기능
+- 포인트 기능, 출석, 게시글 작성 등 활동으로 획득 가능
+- 팔로우, 팔로워
+- 유저 권한 변경 기능( 권한에 따라 사이트 관리 가능)
 
-- 11-22 (SA 작성 및 프로젝트 세팅)
-- 11-23 (백엔드 API 구현)
-- 11-24 (백엔드 API 구현)
-- 11-25 (백엔드 API 마무리 및 프론트 API 구현)
-- 11-26 (프론트 API 구현)
-- 11-27 (프로젝트 마무리)
-- 11-28 (발표 및 발표준비)
-- 토요일은 자율적으로 시간이 될 때 참여하고 일요일은 풀타임으로 참여!
+### Communities 기능 (게시글, 댓글, 대댓글)
 
-## 사용하는 기술
+- 게시글 CRUD 기능
+- 게시글, 유저 검색 기능
+- 실시간 검색어 순위 기능
+- 태그
+- 게시글 신고 기능 (super 계정이 처리)
 
-- python (3.10.8)
-- Django (4.1.3)
-- HTML
-- JavaScript
-- sqlite
-- git
-- yolov5
-- PyTorch
-- opencv
-- Docker
-- gunicorn
-- nginx
+### Manager 기능 ( 사이트 관리 페이지)
 
-## 와이어프레임
+- 권한을 받은 유저가 접근 가능, 권한은 admin이 부여
+- 해당 페이지에서 무신사 상품 정보, 날씨 정보 업데이트 가능
+- 신고당한 게시글 검토 후 처리 가능, 삭제 or 신고 횟수 초기화
+- 유저 삭제 기능
 
-[https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMFJqOD0rR4XhZFmudkHHLz%2FCaBul%3Fnode-id%3D0%253A1%26t%3DSyMiLU8R9dtuJsyP-1](https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMFJqOD0rR4XhZFmudkHHLz%2FCaBul%3Fnode-id%3D0%253A1%26t%3DSyMiLU8R9dtuJsyP-1)
+### Products, Recommend, Weather 기능
 
-## DB erd
+- 무신사 데이터 크롤링
+- 네이버 지역별 날씨 크롤링
+- 사용자의 지역에 맞춰서, 해당 지역 날씨에 맞게 무신사 상품 추천
+- 무신사 상품들 내 옷장에 추가 가능
+- 내 옷장에 담긴 상품들 기준으로 유사한 상품이 옷장에 담겨있는 유저 추천
 
-![CaBul_v2 (1).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a6ef1c5c-030b-47c1-8772-8b232bf3141d/CaBul_v2_(1).png)
+ 
 
-## API 명세서
+## 4-1. 트러블 슈팅
 
-[프로젝트 API 설계하기](https://www.notion.so/6e706e8087d54bf691f13f8f2bb12481)
+### 박준석
+
+**문제 : 프론트엔드 보수 시, AWS s3 버킷에 파일을 업로드 하였는데, 연동된 CloudFront에서 업로드 된 파일이 갱신이 안돼는 상황 발생**
+
+**원인 : CloudFront는 관리형 캐시 정책 사용 중, 때문에 업로드 된 파일이 바로 업로드 되지 않고 캐시가 업데이트 될 때까지 갱신이 되지 않음.**
+
+**해결 : CloudFront에서 무효화 처리를 해줌으로써 해결** 
+
+**참조: [https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)**
+
+### 양기철
+
+**문제 : Serializer를 사용하지않고 ManyToMany 필드를 사용하는 대량 DB 저장시 각 필드끼리 연결되지 않는 문제 발생**
+
+**원인 : 크롤링한 외부 데이터를 가져와서 DB에 저장시키려다보니 각각 알맞는 필드를 연결시키지 못함**
+
+**해결 : ManyToMany 필드에 맞는 로직으로 저장하여 해결**
+### 노우석
+
+**문제 : 출석버튼을 눌렀을 때 db에 저장되어 있는 point가 증가하게 설계해놓았다.**
+
+**다만 코드 로직 자체를 하루에 한번 포인트가 증가하게 할 수 있게 datetime.today()와 버튼을 클릭했을 때의 현재 날짜를 저장하는 click_time의 값을 비교해서 값이 같으면 기능이 작동하지 않게 작성해놓았는데 제대로 작동하지 않는 상황 발생**
+
+**해결 : 두개의 값이 완전히 같게 보여도 타입이 달랐기 때문에 타입을 모델에서 변경해주어 같게 만들어주었더니 해결.**
+
+### 이태겸
+
+**문제 : 태그 기능을 게시글에 작성 시 여러개를 저장하더라도 각각 DB에 저장이 되도록 해야 하는데 각각 저장이 되지 않는 상황 발생**
+
+**원인 : 원인은 Serializer 사용 시 ManyToMany 관계를 의식하지 않고 태그 기능을 구현하였기 때문에 생긴 현상.**
+
+**해결 :ManyToMany 관계 Serializer를 사용하여 기존 Serializer를 수정 보완하여서 해결**
+
+### 성창남
+
+**문제 : 연동 하여 관리자가 신고 게시글 삭제 기능 구현 할 때 백엔드 정보가 프로트엔드에 구현되지 않은 오류가 발생 하는 문제가 발생. 처음에는 await fetch 만 사용 하여 원치않는 정보도 같이 들어와서 오류 발생.**
+
+**해결 : 이중 반복문 을 활용하여 해결.**
+
+## 5. 유저 피드백 반영
+
+### 1. 좋아요 싫어요 버튼이 같이 눌리는 현상이 있습니다.
+
+- 프론트 자체 로직에서 조건을 줄때 내 유저정보와 게시물을 좋아하는 유저목록안에 유저 정보를 비교하면서
+내 유저 id가 게시물을 좋아하는 유저 id목록 안에 있을때 와 없을때 count라는 변수안에 숫자를 줘서 그 숫자에 
+따라함수가 작동하거나 작동하지 않게 끔 로직을 재작성했다
+
+### 2. 유저 포인트 활용하는 기능이 있었으면 좋겠습니다.
+
+- 포인트 활용하는 부분이 없는 부분에 대해서 피드백이 많이 들어와 해당 부분 대해서 고민을 해보고 유저 랭킹 페이지를 신설하여, 임시적으로라도 유저 포인트를 가지고 활용되는부분을 만들어서 피드백 반영 완료
+
+### 3. 상품이 존재하지 않는 브랜드 카테고리를 누를시에 아무것도 뜨지 않아 사용자가 헷갈립니다.
+
+- 브랜드 탭에서 상품이 없는 브랜드는 에러가 뜨는 상황이 있는데 해당부분은 자바스크립트 window.onload 부분에서 실행되어야 할 코드가 상품이 없는 관계로 실행되지 못하는 코드로 예외 처리를 해주었고 브랜드탭에 상품 카운트를 보여줌으로써 상품이 존재하지 않는 브랜드를 처리함으로써 피드백 반영 완료.
+
+### 4. 피드에 좋아요 싫어요 카운트 아이콘이 댓글 갯수 아이콘인지 좋아요 갯수 아이콘인지  헷갈립니다.
+
+-  좋아요 싫어요 갯수를 원래 아이콘으로 보여줬었는데, html을 수정하여 한글로 보이게 해둬서 직관성을 높임. 피드백 반영 완료
+
+### 5. 게시글 작성 시, 필수내용을 한 가지라도 넣지 않았을 때, 안내 메세지가 뜨지 않아 사용자 입장에서는 왜 게시글이 작성이 안되는지 모르겠습니다.
+ 
+- 프론트엔드 js에서 게시글을 등록했을 때, http status code에 따라 if문을 줘서 사용자에게 왜 안되는지 안내하는 alert창 제공, 이 부분 뿐만 아니라 모든 부분에 적용. 피드백 반영 완료
+
+## 6. 와이어프레임
+
+[https://www.figma.com/file/hgtTToRaWbfP87GfNvHaMa/Off_the_Outfit?node-id=0%3A1&t=xw7FNe87Jr8IecaC-1](https://www.figma.com/file/hgtTToRaWbfP87GfNvHaMa/Off_the_Outfit?node-id=0%3A1&t=xw7FNe87Jr8IecaC-1)
+
+![https://user-images.githubusercontent.com/111295065/207312359-91bb78a9-c108-4897-8cc3-e0cbb1f00cd0.png](https://user-images.githubusercontent.com/111295065/207312359-91bb78a9-c108-4897-8cc3-e0cbb1f00cd0.png)
+
+## 7. Architecture
+
+![https://user-images.githubusercontent.com/111295065/207308569-1f6531bf-c8b1-4ff7-b6cf-442bcbe5cfb9.png](https://user-images.githubusercontent.com/111295065/207308569-1f6531bf-c8b1-4ff7-b6cf-442bcbe5cfb9.png)
+
+## 8. API 명세서
+
+[off_the_outfit (getpostman.com)](https://documenter.getpostman.com/view/24913558/2s8YzWRfo4)
+
+## 9. DB 설계 ERD
+
+![https://user-images.githubusercontent.com/111295065/207309475-759e6e8d-8265-4c49-8c8f-9f83478c329d.png](https://user-images.githubusercontent.com/111295065/207309475-759e6e8d-8265-4c49-8c8f-9f83478c329d.png)
