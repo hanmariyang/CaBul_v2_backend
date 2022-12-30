@@ -17,7 +17,7 @@
 
 백엔드  Repository :[https://github.com/devjunseok/CaBul_v2_backend](https://github.com/devjunseok/CaBul_v2_backend)
 
-S.A 링크 : [B1팀 최종 프로젝트](https://iodized-justice-c7c.notion.site/B1-ed15c9156d7949faa389b0835662ab0a)
+S.A 링크 : [B-1팀 유화제작서비스](https://iodized-justice-c7c.notion.site/B1-ed15c9156d7949faa389b0835662ab0a)
 
 ## 1. 프로젝트 주제
 
