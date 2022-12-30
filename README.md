@@ -2,6 +2,7 @@
 
 ## 프로젝트
 
+<img width="443" alt="logo" src="https://user-images.githubusercontent.com/111295065/210082342-b748b547-6540-4f0f-9653-23f2e3ba91cf.png">
 
 
 ### CaBul_v2
