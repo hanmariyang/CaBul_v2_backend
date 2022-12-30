@@ -64,52 +64,30 @@ S.A 링크 : [B1팀 최종 프로젝트](https://iodized-justice-c7c.notion.sit
 
 ### User 기능(회원가입/로그인 - simple jwt 사용)
 
-- 회원가입 시, 아이디, 닉네임, 비밀번호 정규표현식 필터링 적용 ( 회원정보 수정 시에도 적용)
+- dj-rest-auth 이용 회원가입, 로그인 기능 구현 (이메일 인증 포함)
 - extra_kwargs 처리로 에러 메세지 세분화 처리
-- 로그인 시 발급되는 페이로드에 유저 pk값, username 값 저장
-- 회원정보 CRUD 기능
-- 회원가입 시 약관동의 기능
 - 마지막 로그인 365일 경과된 아이디 삭제 기능
-- 포인트 기능, 출석, 게시글 작성 등 활동으로 획득 가능
 - 팔로우, 팔로워
-- 유저 권한 변경 기능( 권한에 따라 사이트 관리 가능)
 
-### Communities 기능 (게시글, 댓글, 대댓글)
+### articles 기능 (게시글, 댓글, 사물인식, 유화제작)
 
 - 게시글 CRUD 기능
 - 게시글, 유저 검색 기능
-- 실시간 검색어 순위 기능
-- 태그
-- 게시글 신고 기능 (super 계정이 처리)
-
-### Manager 기능 ( 사이트 관리 페이지)
-
-- 권한을 받은 유저가 접근 가능, 권한은 admin이 부여
-- 해당 페이지에서 무신사 상품 정보, 날씨 정보 업데이트 가능
-- 신고당한 게시글 검토 후 처리 가능, 삭제 or 신고 횟수 초기화
-- 유저 삭제 기능
-
-### Products, Recommend, Weather 기능
-
-- 무신사 데이터 크롤링
-- 네이버 지역별 날씨 크롤링
-- 사용자의 지역에 맞춰서, 해당 지역 날씨에 맞게 무신사 상품 추천
-- 무신사 상품들 내 옷장에 추가 가능
-- 내 옷장에 담긴 상품들 기준으로 유사한 상품이 옷장에 담겨있는 유저 추천
+- 업로드 이미지 사물인식 및 카테고리 자동 분류 기능(Pytorch 사용)
+- 업로드 이미지 유화풍 이미지로 제작(딥러닝 모델 사용)
 
  
-
 ## 4-1. 트러블 슈팅
 
 ### 박준석
 
-**문제 : 프론트엔드 보수 시, AWS s3 버킷에 파일을 업로드 하였는데, 연동된 CloudFront에서 업로드 된 파일이 갱신이 안돼는 상황 발생**
+**문제 : 업로드한 사진을 유화처리한 후 저장될 때, 원본 이미지와 파일 이름이 겹쳐서 저장이 안되는 현상 발생**
 
-**원인 : CloudFront는 관리형 캐시 정책 사용 중, 때문에 업로드 된 파일이 바로 업로드 되지 않고 캐시가 업데이트 될 때까지 갱신이 되지 않음.**
+**원인 : 처음에 모델링을 할 때, 유화처리된 이미지를 저장할 필드를 따로 선언해두지 않아 발생한 문제**
 
-**해결 : CloudFront에서 무효화 처리를 해줌으로써 해결** 
+**해결 : models.py에 rename_imagefile_to_uuid 함수를 작성, uuid 사용하여 파일 이름을 난수처리 하여 파일 이름이 같은 사진이어도 겹치지 않게 처리** 
 
-**참조: [https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html](https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)**
+**참조: [https://hangjastar.tistory.com/202](https://hangjastar.tistory.com/202)**
 
 ### 양기철
 
@@ -169,10 +147,6 @@ S.A 링크 : [B1팀 최종 프로젝트](https://iodized-justice-c7c.notion.sit
 [https://www.figma.com/file/hgtTToRaWbfP87GfNvHaMa/Off_the_Outfit?node-id=0%3A1&t=xw7FNe87Jr8IecaC-1](https://www.figma.com/file/hgtTToRaWbfP87GfNvHaMa/Off_the_Outfit?node-id=0%3A1&t=xw7FNe87Jr8IecaC-1)
 
 ![https://user-images.githubusercontent.com/111295065/207312359-91bb78a9-c108-4897-8cc3-e0cbb1f00cd0.png](https://user-images.githubusercontent.com/111295065/207312359-91bb78a9-c108-4897-8cc3-e0cbb1f00cd0.png)
-
-## 7. Architecture
-
-![https://user-images.githubusercontent.com/111295065/207308569-1f6531bf-c8b1-4ff7-b6cf-442bcbe5cfb9.png](https://user-images.githubusercontent.com/111295065/207308569-1f6531bf-c8b1-4ff7-b6cf-442bcbe5cfb9.png)
 
 ## 8. API 명세서
 
