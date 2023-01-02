@@ -113,14 +113,10 @@ S.A 링크 : [B-1팀 유화제작서비스](https://iodized-justice-c7c.notion.
 
 ## 5. 와이어프레임
 
-[https://www.figma.com/file/hgtTToRaWbfP87GfNvHaMa/Off_the_Outfit?node-id=0%3A1&t=xw7FNe87Jr8IecaC-1](https://www.figma.com/file/hgtTToRaWbfP87GfNvHaMa/Off_the_Outfit?node-id=0%3A1&t=xw7FNe87Jr8IecaC-1)
+[https://www.figma.com/file/MFJqOD0rR4XhZFmudkHHLz/CaBul?node-id=0%3A1&t=8Q7DjUGJv1QeA0JW-1](https://www.figma.com/file/MFJqOD0rR4XhZFmudkHHLz/CaBul?node-id=0%3A1&t=8Q7DjUGJv1QeA0JW-1)
 
-![https://user-images.githubusercontent.com/111295065/207312359-91bb78a9-c108-4897-8cc3-e0cbb1f00cd0.png](https://user-images.githubusercontent.com/111295065/207312359-91bb78a9-c108-4897-8cc3-e0cbb1f00cd0.png)
+![cabul2_wire](https://user-images.githubusercontent.com/111295065/210205593-6717664c-8ee1-42c2-be93-ee8d4fb664a2.png)
 
-## 6. API 명세서
+## 6. DB 설계 ERD
 
-[off_the_outfit (getpostman.com)](https://documenter.getpostman.com/view/24913558/2s8YzWRfo4)
-
-## 7. DB 설계 ERD
-
-![https://user-images.githubusercontent.com/111295065/207309475-759e6e8d-8265-4c49-8c8f-9f83478c329d.png](https://user-images.githubusercontent.com/111295065/207309475-759e6e8d-8265-4c49-8c8f-9f83478c329d.png)
+![cabul2_erd](https://user-images.githubusercontent.com/111295065/210205560-77b4888f-e275-406e-b522-18ff02bff9bd.png)
